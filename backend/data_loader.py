@@ -33,3 +33,15 @@ def get_track_risk():
 
 def get_train_movements():
     return train_movements
+
+def get_track_risk_by_id(track_id):
+    result = track_risk[track_risk["track_id"] == track_id]
+    return result
+
+def get_train_movements_by_track(track_id):
+    result = train_movements[train_movements["track_id"] == track_id]
+    return result
+
+def get_maintenance_blocks_by_track(track_id):
+    result = maintenance_blocks[maintenance_blocks["track_id"] == track_id]
+    return result
